@@ -1,0 +1,32 @@
+baseURL: 'https://cascodes.de/'
+languageCode: 'en-us'
+title: 'CasCodes'
+theme: "PaperMod"
+defaultTeme: dark
+
+enableEmoji: true
+
+
+params:
+  profileMode:
+      enabled: true
+      Title: Hi there! ✌️
+      subtitle: I'm Caspar, aka CasCodes.
+      imageUrl: sprite.jpeg #https://cdn.dribbble.com/users/626374/screenshots/18466449/media/cd1d68034d973e6a8b42438f92a066d3.jpg # optional
+      imageWidth: 120 # custom size
+      imageHeight: 120 # custom size
+      buttons:
+        - name: Projects
+          url: "/projects/"
+        - name: Github
+          url: "https://github.com/CasCodes"
+  ShowReadingTime: true
+    # socialIcons: # optional
+    #   - name: "medium"
+    #     url: "https://github.com/adityatelange/hugo-PaperMod/wiki/Features#home-info-mode"
+    #   - name: "linkedin"
+    #     url: "https://github.com/adityatelange/hugo-PaperMod/wiki/Features#home-info-mode"
+    # homeInfoParams:
+    #     Title: Hello, world! 🌍
+    #     Content: Hi! I'm Caspar, aka CasCodes. My passion is finding simple solutions to hard problems.🧠 AI + Web 🐍 Python ❤️ Open source
+
