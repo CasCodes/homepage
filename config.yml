@@ -12,7 +12,7 @@ params:
       enabled: true
       Title: Hi there! ✌️
       subtitle: I'm Caspar, aka CasCodes.
-      imageUrl: sprite.jpeg #https://cdn.dribbble.com/users/626374/screenshots/18466449/media/cd1d68034d973e6a8b42438f92a066d3.jpg # optional
+      imageUrl: icon.png #https://cdn.dribbble.com/users/626374/screenshots/18466449/media/cd1d68034d973e6a8b42438f92a066d3.jpg # optional
       imageWidth: 120 # custom size
       imageHeight: 120 # custom size
       buttons:
