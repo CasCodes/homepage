@@ -5,10 +5,12 @@ draft: false
 description: A chromium extensions which summarizes the text highlighted in your browser via AI.
 ---
 
-![Example image](/kiyo_smug.png)
+![header image](/kiyo_smug.png)
 
 
 ### 01 Introduction 💡
+BERT/Transformers is a hot topic in the machine learning world. This technology offers state of the art language processing and even understanding.
+
 For this project I wanted to build something that could actually be useful in everyday life.
 Reading long webpages can be time consuming, and that's when a summarization browser extension came to mind.  
 Since I'm working a lot with **NLP** (natural language processing) anyways, using it in a real-life scenario seemed like an interesting challenge.
@@ -34,7 +36,7 @@ To keep it simple, I went with a **Huggingface** pretrained model. They can be i
 import huggingace
 code here::
 ```
-Instead of paraphrasing, **bart-base-cnn** just weights the importance of each sentence, which makes it faster than some of the alternatives. Therefore, the result is a selection of unchanged sentences from the original text.
+Instead of paraphrasing, **bart-base-cnn** weights the importance of each sentence, which makes it faster than some of the alternatives. Therefore, the result is a selection of unchanged sentences from the original text.
 
 With that, the machine learning was done aswell! ✅
 
@@ -43,8 +45,7 @@ After trying out different hosting methods, I've settled for **AWS**.
 
 - Huggingface has great Sagemaker support
 - Lambda functions are more cost efficient than a full-fetched server
-- I've never worked with AWS and wanted to learn it
+- I've never worked with AWS and wanted to learn something new
 
 The final pipeline looks like this:
-
-> image of aws pipeline here
+![pipeline image](/aws_pipeline.png)

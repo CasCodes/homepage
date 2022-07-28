@@ -20,15 +20,16 @@ menu:
     weight: -100
 
 params:
-  profileMode:
-      enabled: true
-      Title: Hi there! ✌️
-      subtitle: 🧠 AI + Web 🐍 Python ❤️ Open source
-      imageUrl: icon.png 
-      imageWidth: 150 # custom size
-      imageHeight: 150 # custom size
-      buttons: # center
-        - name: Projects
-          url: "/projects/"
-        - name: Github
-          url: "https://github.com/CasCodes"
+    profileMode:
+        enabled: true
+        Title: Hi there! ✌️
+        subtitle: 🧠 AI + Web 🐍 Python ❤️ Open source
+        imageUrl: icon.png 
+        imageWidth: 150 # custom size
+        imageHeight: 150 # custom size
+        buttons: # center
+          - name: Projects
+            url: "/projects/"
+          - name: Github
+            url: "https://github.com/CasCodes"
+
