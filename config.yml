@@ -6,6 +6,7 @@ defaultTeme: dark
 
 enableEmoji: true
 
+
 # top menu
 menu:
   main:
@@ -31,7 +32,3 @@ params:
           url: "/projects/"
         - name: Github
           url: "https://github.com/CasCodes"
-    # homeInfoParams:
-    #     Title: Hello, world! 🌍
-    #     Content: Hi! I'm Caspar, aka CasCodes. My passion is finding simple solutions to hard problems.🧠 AI + Web 🐍 Python ❤️ Open source
-
