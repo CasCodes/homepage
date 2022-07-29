@@ -5,7 +5,7 @@ draft: false
 description: A chromium extensions which summarizes the text highlighted in your browser via AI.
 ---
 
-![header image](/kiyo_smug.png)
+![header image](/md_img/kiyo_smug.png)
 
 
 ### 01 Introduction 💡
@@ -48,4 +48,4 @@ After trying out different hosting methods, I've settled for **AWS**.
 - I've never worked with AWS and wanted to learn something new
 
 The final pipeline looks like this:
-![pipeline image](/aws_pipeline.png)
+![pipeline image](/md_img/aws_pipeline.png)
