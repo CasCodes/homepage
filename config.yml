@@ -5,7 +5,7 @@ theme: "PaperMod"
 defaultTeme: dark
 
 enableEmoji: true
-
+tag: "tags"
 
 # top menu
 menu:
