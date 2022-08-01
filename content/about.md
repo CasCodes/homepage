@@ -1,7 +1,6 @@
 ---
 title: "About"
 url: "/about/"
-layout: about
 ---
 
 ![profile image](/profile.jpg)

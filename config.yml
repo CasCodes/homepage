@@ -26,9 +26,15 @@ params:
         imageUrl: icon.png 
         imageWidth: 150 # custom size
         imageHeight: 150 # custom size
+  
         buttons: # center
           - name: Projects
             url: "/projects/"
           - name: Github
             url: "https://github.com/CasCodes"
 
+    socialIcons: # optional
+      - name: linkedin
+        url: "https://www.linkedin.com/in/caspar-pagel-008926238/"
+      - name: medium
+        url: "https://medium.com/@cascodes"
