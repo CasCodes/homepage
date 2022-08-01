@@ -34,6 +34,23 @@ Every chrome extension requires three JS files:
 - The **pop-up** gets opened by clicking on the extension icon. It includes `widget.html`, `widget.css` and `widget.js`
 - The content of the **web page** itself can be acessed through the `content.js`
 
+Therefore the directory structure looks like this:
+```
+.
+├── manifest.json --> required by chrome to define versions etc
+├── res
+│   └── icon.png
+├── script
+│   ├── background.js
+│   ├── content.js
+│   └── widget.js
+├── style
+│   ├── icons  -->all the images
+│   └── style.css
+├── summary.html  -->popup page for displaying the text
+└── widget.html -->main popup page
+```
+
 For the UI (Widget), I ended up with this:
 ![UI img](/md_img/kiyo_ui.png)
 Next to the orange start button is a loading bar and in the bottom left corner is a status text, which will change to "loading" once the button is pressed.
