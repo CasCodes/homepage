@@ -6,6 +6,7 @@ defaultTeme: dark
 
 enableEmoji: true
 
+
 # top menu
 menu:
   main:
@@ -19,6 +20,7 @@ menu:
     weight: -100
 
 params:
+  ShowToc: true
   profileMode:
       enabled: true
       Title: Hi there! ✌️

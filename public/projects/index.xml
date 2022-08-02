@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>CasCodes</title>
-    <link>https://cascodes.de/</link>
-    <description>Recent content on CasCodes</description>
+    <title>Projects on CasCodes</title>
+    <link>https://cascodes.de/projects/</link>
+    <description>Recent content in Projects on CasCodes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jul 2022 14:17:12 +0200</lastBuildDate><atom:link href="https://cascodes.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 14:17:12 +0200</lastBuildDate><atom:link href="https://cascodes.de/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kiyo - AI Browser Extension</title>
       <link>https://cascodes.de/projects/kiyo/</link>
@@ -24,19 +24,6 @@
       <guid>https://cascodes.de/projects/unreally/</guid>
       <description>An ecosystem to fight fake news on social media and beyond</description>
     </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://cascodes.de/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cascodes.de/about/</guid>
-      <description>Caspar Pagel 📍 Hamburg, Germany
-Hello, world! I&amp;rsquo;m Caspar, aka CasCodes. My passion is finding simple solutions to hard problems.
-linkedin | medium
- </description>
-    </item>
-    
     
   </channel>
 </rss>

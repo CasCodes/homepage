@@ -12,7 +12,7 @@ description: A chromium extensions which summarizes the text highlighted in your
 BERT/Transformers is a hot topic in the machine learning world bacause it offers state of the art language processing for everyone.
 
 For this project I wanted to build something that could be useful in everyday life.
-Reading long webpages can be time consuming, and that's when a summarization browser extension came to mind.  
+And since reading long webpages can be time consuming, a summarization browser extension came to mind.  
 Since I'm working a lot with **NLP** (natural language processing) anyways, using it in a real-life scenario seemed like an interesting challenge.
 
 The main idea is:
@@ -22,7 +22,7 @@ The main idea is:
 
 
 ## 02 Design 📝
-Essentially, project consits of **three** main parts: The browser extension (Frontend) and the API (backend) and the machine learning.
+Essentially, project consits of **three** main parts: The browser extension (Frontend), the API (backend) and the machine learning.
 
 ### Frontend
 In contrast to what I initally thought, the frontend was the most time consuming part of this project.
@@ -38,14 +38,13 @@ Therefore the directory structure looks like this:
 ```
 .
 ├── manifest.json --> required by chrome to define versions etc
-├── res
-│   └── icon.png
+├── res            --> images
 ├── script
 │   ├── background.js
 │   ├── content.js
 │   └── widget.js
 ├── style
-│   ├── icons  -->all the images
+│   ├── icons  --> images for UI
 │   └── style.css
 ├── summary.html  -->popup page for displaying the text
 └── widget.html -->main popup page
@@ -58,13 +57,15 @@ Next to the orange start button is a loading bar and in the bottom left corner i
 Because all three scipts only "see" a limited part of the browser, they need to communicate with each other in order to get the job done:
 ![communication img](/md_img/extension_communication.png)
 
-The communication between the scripts as well as the API was rather time consuming, especially since I rarely use JS.
+The communication between the scripts as well as the API was rather time consuming, especially since I rarely use JS. Getting CORS (cross-origin resource sharing) down was the main problem, because it requires configuring both the front- and backend. After reading a lot of AWS documentation, It finally worked.
 
 ### Backend
-I knew right from the beginning that I wanted to use **Python** for the API server. 
+I knew right from the beginning that I wanted to use **Python** for the API server.
+Python has a vast amount of machine learning libraries and some solid API frameworks. For the first draft, I used Flask to build an API server, but this turned out to be unnessecary because **API Gateway** does all the work. (more on that later)
 
 ### Machine Learning
 To keep it simple, I went with a **Huggingface** pretrained model. They can be imported into python easily and offer state of the art performance.
+Using the summarization pipeline is as easy as that:
 
 ```py
 import huggingace
@@ -97,4 +98,4 @@ It reads the text, passes it into the sagemaker endpoint and returns the summari
 
 The machine learning takes about 5 seconds and the entire process takes up to 10 seconds, which feels like a long time when waiting for something to load in a browser.
 
-## Final Thoughts
+## Final Thoughts 💭
