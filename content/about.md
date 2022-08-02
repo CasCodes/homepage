@@ -1,9 +1,10 @@
 ---
 title: "About"
 url: "/about/"
+ShowToc: false
 ---
 
-![profile image](/profile.jpg)
+![profile image](/wooden_profile.png)
 ### Caspar Pagel
 📍 Hamburg, Germany
 
