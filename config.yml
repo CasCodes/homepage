@@ -40,6 +40,12 @@ params:
       url: "https://www.linkedin.com/in/caspar-pagel-008926238/"
     - name: medium
       url: "https://medium.com/@cascodes"
+  shareIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/caspar-pagel-008926238/"
+    - name: medium
+      url: "https://medium.com/@cascodes"
+
 
   assets:
     favicon: "fav.png"
