@@ -26,8 +26,8 @@ params:
       Title: Hi there! 
       subtitle: 🧠 AI + Web 🐍 Python ❤️ Open source
       imageUrl: icon.png 
-      imageWidth: 150 # custom size
-      imageHeight: 150 # custom size
+      imageWidth: 170 # custom size
+      imageHeight: 170 # custom size
 
       buttons: # center
         - name: Projects
@@ -36,11 +36,6 @@ params:
           url: "https://github.com/CasCodes"
 
   socialIcons: # optional
-    - name: linkedin
-      url: "https://www.linkedin.com/in/caspar-pagel-008926238/"
-    - name: medium
-      url: "https://medium.com/@cascodes"
-  shareIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/caspar-pagel-008926238/"
     - name: medium
