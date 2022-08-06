@@ -32,7 +32,7 @@ Every chrome extension requires three JS files:
 
 - The **extension** is the little icon that appears in the top row of the browser. It uses the `background.js`
 - The **pop-up** gets opened by clicking on the extension icon. It includes `widget.html`, `widget.css` and `widget.js`
-- The content of the **web page** itself can be acessed through the `content.js`
+- The content of the **web page** itself can be accessed through the `content.js`
 
 Therefore the directory structure looks like this:
 ```
@@ -57,7 +57,32 @@ Next to the orange start button is a loading bar and in the bottom left corner i
 Because all three scipts only "see" a limited part of the browser, they need to communicate with each other in order to get the job done:
 ![communication img](/md_img/extension_communication.png)
 
-The communication between the scripts as well as the API was rather time consuming, especially since I rarely use JS. Getting CORS (cross-origin resource sharing) down was the main problem, because it requires configuring both the front- and backend. After reading a lot of AWS documentation, It finally worked.
+The communication between the scripts as well as the API was rather time consuming, especially since I rarely use JS. Getting CORS (cross-origin resource sharing) down was the main problem, because it requires configuring both the front- and backend. After reading a lot of AWS documentation, It finally worked:
+
+```js
+function requestAPI(text) {
+    // send the request
+    var data = {"text": text}
+    var url = new URL(API_URL)
+
+    fetch(url, {
+        mode: "cors",
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json',
+            // i've configured the token to limit the requests/sec for security
+            'x-api-key': TOKEN
+        }
+    }) // once the request resolves, we want to read the response
+    .then(response => response.json())
+    .then(rb => {
+        // send text to widget
+        console.log(rb);
+        sendMessage(rb);
+    });
+}
+```
 
 ### Backend
 I knew right from the beginning that I wanted to use **Python** for the API server.
@@ -68,10 +93,21 @@ To keep it simple, I went with a **Huggingface** pretrained model. They can be i
 Using the summarization pipeline is as easy as that:
 
 ```py
-import huggingace
-code here::
+from transformers import pipeline
+
+# downloads the pipeline
+def initalize_model():
+    pl = pipeline('summarization', model='ainize/bart-base-cnn') 
+    return pl
+
+# when called, summarizes the text and returns the result
+def compute_summarize(text, pl):
+    summary = pl(text, min_length=30, do_sample=False)
+
+    return summary[0]
+
 ```
-Instead of paraphrasing, **bart-base-cnn** weights the importance of each sentence, which makes it faster than some of the alternatives. Therefore, the result is a selection of unchanged sentences from the original text.
+Instead of paraphrasing, [**bart-base-cnn**](https://huggingface.co/ainize/bart-base-cnn) weights the importance of each sentence, which makes it faster than some of the alternatives. Therefore, the result is a selection of sentences from the original text.
 
 With that, the machine learning was done aswell! ✅
 
@@ -79,23 +115,30 @@ With that, the machine learning was done aswell! ✅
 After trying out different hosting methods, I've settled for **AWS**. 
 
 - Huggingface has great Sagemaker support
-- Lambda functions are more cost efficient than a full-fetched server
+- Lambda functions are more cost efficient than a full-fledged server
 - I've never worked with AWS and wanted to learn something new
 
 The final pipeline looks like this:
 ![pipeline image](/md_img/aws_pipeline.png)
 
-The `content.js` sends a POST request to API Gateway, which contains the highlighted text in its body.
+The `content.js` sends a POST request to API Gateway, which contains the highlighted text in its body:
 
 ```json
 "body": {
-    "text": "<the highlighted text>"
+    "text": "<highlighted text>"
 }
 ```
 
-API Gateway then invokes my Lambda function, passing the JSON of the request.
+API Gateway then invokes a Lambda function, passing the JSON of the request.
 It reads the text, passes it into the sagemaker endpoint and returns the summarized text as a JSON response.
 
 The machine learning takes about 5 seconds and the entire process takes up to 10 seconds, which feels like a long time when waiting for something to load in a browser.
 
+> Now lets get to the fun part!
+### [👉 **Try it out**](https://github.com/CasCodes/Kiyo/releases/tag/v.1.0.0)
+
 ## Final Thoughts 💭
+
+In this project I've learned a lot about web development (like async requests and JSON), as well as deploying web applications and machine learning models on AWS.
+
+The different AWS services and design patterns are really interesting and I definitely want to dive deeper into this topic in the future.
