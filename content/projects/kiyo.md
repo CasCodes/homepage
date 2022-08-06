@@ -22,7 +22,7 @@ The main idea is:
 
 
 ## 02 Design 📝
-Essentially, project consits of **three** main parts: The browser extension (Frontend), the API (backend) and the machine learning.
+Essentially, project consits of **three** parts: The browser extension (Frontend), the API (backend) and the machine learning.
 
 ### Frontend
 In contrast to what I initally thought, the frontend was the most time consuming part of this project.
