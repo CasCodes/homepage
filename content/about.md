@@ -3,9 +3,6 @@ title: "Caspar Pagel"
 url: "/about/"
 ShowToc: false
 layout: about
-
-params:
-
 ---
 
 📍 Hamburg, Germany
