@@ -5,7 +5,7 @@ draft: false
 description: A chromium extensions which summarizes the text highlighted in your browser via AI. Build with JS, Python and AWS
 
 ---
-![header image](https://cascodes.github.io/cascodes_hugo/md_img/kiyo_smug.png)
+![header image](https://cascodes.github.io/homepage/md_img/kiyo_smug.png)
 
 
 ## 01 Introduction 💡
@@ -27,7 +27,7 @@ Essentially, project consists of **three** parts: The browser extension (Fronten
 In contrast to what I initally thought, the frontend was the most time consuming part of this project.
 The main reason for this is the way chrome extensions need to be structured.
 Every chrome extension requires three JS files:
-![browser structure](https://cascodes.github.io/cascodes_hugo/md_img/browser_structure.png)
+![browser structure](https://cascodes.github.io/homepage/md_img/browser_structure.png)
 
 - The **extension** is the little icon that appears in the top row of the browser. It uses the `background.js`
 - The **pop-up** gets opened by clicking on the extension icon. It includes `widget.html`, `widget.css` and `widget.js`
@@ -50,11 +50,11 @@ Therefore the directory structure looks like this:
 ```
 
 For the UI (Widget), I ended up with this:
-![UI img](https://cascodes.github.io/cascodes_hugo/md_img/kiyo_ui.png)
+![UI img](https://cascodes.github.io/homepage/md_img/kiyo_ui.png)
 Next to the orange start button is a loading bar and in the bottom left corner is a status text, which will change to "loading" once the button is pressed.
 
 Because all three scipts only "see" a limited part of the browser, they need to communicate with each other in order to get the job done:
-![communication img](https://cascodes.github.io/cascodes_hugo/md_img/extension_communication.png)
+![communication img](https://cascodes.github.io/homepage/md_img/extension_communication.png)
 
 The communication between these scripts uses the build-in **Chrome-API**. One script sends a message, the other script listens for it and revieves it: 
 ```js
@@ -135,7 +135,7 @@ After trying out different hosting methods, I've settled for **AWS**.
 - I've never worked with AWS and wanted to learn something new
 
 The final pipeline looks like this:
-![pipeline image](https://cascodes.github.io/cascodes_hugo/md_img/aws_pipeline.png)
+![pipeline image](https://cascodes.github.io/homepage/md_img/aws_pipeline.png)
 
 The `requestAPI()` method in content.js sends a POST request to **API Gateway**. API Gateway basically is a server that can be freely configured to invokes various AWS services, so I didn't even need my Flask API server.
 
