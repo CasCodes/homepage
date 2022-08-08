@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cascodes.de/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/</loc>
     <lastmod>2022-07-27T14:17:12+02:00</lastmod>
   </url><url>
-    <loc>https://cascodes.de/projects/kiyo/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/projects/kiyo/</loc>
     <lastmod>2022-07-27T14:17:12+02:00</lastmod>
   </url><url>
-    <loc>https://cascodes.de/projects/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/projects/</loc>
     <lastmod>2022-07-27T14:17:12+02:00</lastmod>
   </url><url>
-    <loc>https://cascodes.de/projects/unreally/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/projects/unreally/</loc>
     <lastmod>2022-03-27T14:17:12+02:00</lastmod>
   </url><url>
-    <loc>https://cascodes.de/about/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/about/</loc>
   </url><url>
-    <loc>https://cascodes.de/categories/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/categories/</loc>
   </url><url>
-    <loc>https://cascodes.de/archives/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/archives/</loc>
   </url><url>
-    <loc>https://cascodes.de/tags/</loc>
+    <loc>https://cascodes.github.io/cascodes_hugo/tags/</loc>
   </url>
 </urlset>

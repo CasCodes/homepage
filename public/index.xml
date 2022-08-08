@@ -2,39 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CasCodes</title>
-    <link>https://cascodes.de/</link>
+    <link>https://cascodes.github.io/cascodes_hugo/</link>
     <description>Recent content on CasCodes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jul 2022 14:17:12 +0200</lastBuildDate><atom:link href="https://cascodes.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 14:17:12 +0200</lastBuildDate><atom:link href="https://cascodes.github.io/cascodes_hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kiyo - AI Browser Extension</title>
-      <link>https://cascodes.de/projects/kiyo/</link>
+      <link>https://cascodes.github.io/cascodes_hugo/projects/kiyo/</link>
       <pubDate>Wed, 27 Jul 2022 14:17:12 +0200</pubDate>
       
-      <guid>https://cascodes.de/projects/kiyo/</guid>
+      <guid>https://cascodes.github.io/cascodes_hugo/projects/kiyo/</guid>
       <description>A chromium extensions which summarizes the text highlighted in your browser via AI. Build with JS, Python and AWS</description>
     </item>
     
     <item>
       <title>Unreally - Fighting Fake News</title>
-      <link>https://cascodes.de/projects/unreally/</link>
+      <link>https://cascodes.github.io/cascodes_hugo/projects/unreally/</link>
       <pubDate>Sun, 27 Mar 2022 14:17:12 +0200</pubDate>
       
-      <guid>https://cascodes.de/projects/unreally/</guid>
+      <guid>https://cascodes.github.io/cascodes_hugo/projects/unreally/</guid>
       <description>An ecosystem to fight fake news on social media and beyond</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://cascodes.de/about/</link>
+      <title>Caspar Pagel</title>
+      <link>https://cascodes.github.io/cascodes_hugo/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cascodes.de/about/</guid>
-      <description>Caspar Pagel 📍 Hamburg, Germany
-Hello, world! I&amp;rsquo;m Caspar, aka CasCodes. My passion is finding simple solutions to hard problems.
-linkedin | medium
- </description>
+      <guid>https://cascodes.github.io/cascodes_hugo/about/</guid>
+      <description>📍 Hamburg, Germany
+Hello, world! My name is Caspar, aka CasCodes. I&amp;rsquo;m 17 years old.
+Currently, I focus on Python to learn more about AI, in particular NLP (natural language processing). Teaching computers how to understand and generate human language is a fascinating field that has the potential to progress almost every industry.
+In the future, I hope to solve meaningful problems with smart software.
+ Certificates 💻 CS50 - Introduction to computer science An online course provided by HarvardX over 12 weeks, including: Programmig with C (Pointers, Memory Allocation, Linked Lists &amp;amp; Hash Tables) | Programming with Python (Flask, AJAX) | SQL | Web (JS, HTML, CSS) |</description>
     </item>
     
     

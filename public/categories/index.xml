@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on CasCodes</title>
-    <link>https://cascodes.de/categories/</link>
+    <link>https://cascodes.github.io/cascodes_hugo/categories/</link>
     <description>Recent content in Categories on CasCodes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cascodes.de/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://cascodes.github.io/cascodes_hugo/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
