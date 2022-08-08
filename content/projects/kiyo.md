@@ -9,7 +9,7 @@ description: A chromium extensions which summarizes the text highlighted in your
 
 
 ## 01 Introduction 💡
-BERT/Transformers is a hot topic in the machine learning world bacause it offers state of the art language processing for everyone.
+BERT/Transformers is a hot topic in the machine learning world because it offers state of the art language processing for everyone.
 
 For this project I wanted to use these technologies to build something that could be useful in everyday life.
 Since I've been reading a lot of papers and articles online, a summarization browser extension came to mind.
